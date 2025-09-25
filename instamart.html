@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f8f9fa;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+    .location span {
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+      position: relative;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 10px 40px 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+    .search-bar i {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #555;
+      cursor: pointer;
+    }
+
+    .profile {
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* Banner */
+    .banner {
+      background-image: url(https://tinyurl.com/426mse83);
+      padding: 180px 40px;
+      text-align: center;
+      color: white;
+      background-repeat: no-repeat;
+      justify-content: center;
+    }
+
+    .banner img{
+        width: 300px;
+    
+        
+    }
+     .banner background-img{
+        opacity: 0.4;
+     }
+
+
+    .brands {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      opacity: 0.8;
+    }
+    .brands img {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    /* Categories */
+    .categories {
+      display: flex;
+      gap: 15px;
+      padding: 20px;
+      overflow-x: auto;
+      justify-content: center;
+    }
+    .card {
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: 120px;
+      flex: 0 0 auto;
+      text-align: center;
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+    .card h4 {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    .card p {
+      font-size: 12px;
+      background: red;
+      padding: 4px;
+      border-radius: 6px;
+    }
+
+    /* Scrollbar for categories */
+    .categories::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="location">
+      <i class="fa fa-location-dot"></i>
+      <span>Add your location</span>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder='Search for "Groceries"'>
+      <i class="fa fa-search"></i>
+    </div>
+    <div class="profile">
+      <i class="fa fa-user-circle"></i>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h3>Powered by</h3>
+    <div class="brands">
+      <img src="https://tinyurl.com/4herst3r" alt="boat">
+      <img src="https://tinyurl.com/vhe6567p" alt="philips">
+      <img src="https://tinyurl.com/3fsm6r5e" alt="bergner">
+      <img src="https://tinyurl.com/vdk7hh8w" alt="pampers">
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="categories">
+    <div class="card">
+      <img src="https://tinyurl.com/4wkkxxh6" alt="fresh">
+      <h4>Fresh corner</h4>
+      <p>UP TO 45% OFF</p>
+    </div>
+    <div class="card">
+      <img src="https://tinyurl.com/49w3my27" alt="drinks">
+      <h4>Indulgence</h4>
+      <p>UP TO 60% OFF</p>
+    </div>
+    <div class="card">
+      <img src="https://tinyurl.com/33w7jdk5" alt="cetaphil">
+      <h4>Cetaphil</h4>
+      <p>UP TO 10% OFF</p>
+    </div>
+    <div class="card">
+      <img src="https://tinyurl.com/57rjxdhv" alt="mobiles">
+      <h4>Mobiles</h4>
+      <p>UP TO 90% OFF</p>
+    </div>
+    <div class="card">
+      <img src="https://tinyurl.com/ypakvvb3" alt="groceries">
+      <h4>Groceries</h4>
+      <p>UP TO 70% OFF</p>
+    </div>
+    <div class="card">
+      <img src="https://tinyurl.com/j94ydu3u" alt="home">
+      <h4>Home & kitchen</h4>
+      <p>UP TO 80% OFF</p>
+    </div>
+    <div class="card">
+      <img src="https://tinyurl.com/ypnuhkzy" alt="beauty">
+      <h4>Beauty</h4>
+      <p>UP TO 60% OFF</p>
+    </div>
+    <div class="card">
+      <img src="https://tinyurl.com/ms95fwrv" alt="Toys">
+      <h4>Toys and collection</h4>
+      <p>Start at ₹49</p>
+    </div>
+    <div class="card">
+      <img src="https://tinyurl.com/4bmzca5w" alt="Health">
+      <h4>Health and wellness</h4>
+      <p>stay fit</p>
+    </div>
+    <div class="card">
+      <img src="https://tinyurl.com/up862faj" alt="cleaning">
+      <h4>Cleaning essentials</h4>
+      <p>clean home</p>
+    </div>
+  </div>
+
+</body>
+</html>
